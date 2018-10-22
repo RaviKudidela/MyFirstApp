@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'firstApp';
+  title = 'first';
+  public name = 'Ravi';
+  public showname: any[] = [];
+  public list: any[] = ['1','2','3','4'];
 }

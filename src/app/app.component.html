@@ -3,4 +3,10 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
+  <h1 *ngIf = showname>my name is {{name}}</h1>
+  <ul>
+    <li *ngFor = "let num of list" >
+      {{num}}
+    </li>
+  </ul>
 </div>
