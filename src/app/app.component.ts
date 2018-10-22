@@ -9,5 +9,5 @@ export class AppComponent {
   title = 'first';
   public name = 'Ravi';
   public showname: any[] = [];
-  public list: any[] = ['1','2','3','4'];
+  public list: any[] = [1,2,3,4];
 }
