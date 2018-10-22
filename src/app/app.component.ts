@@ -11,5 +11,10 @@ export class AppComponent {
   public showname: any[] = [];
   public list: any[] = [1,2,3,4];
   public listObj: any[] = [{name: 'ravi', age: 28}, {name:'ramu', age: 45}];
+  public department: string;
+constructor()
+{
+  this.department = 'UI';
+}
 }
 
