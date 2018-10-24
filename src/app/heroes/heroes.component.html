@@ -1,0 +1,14 @@
+<div>
+  <ul>
+    <li *ngFor = "let hero of heroesList">
+      {{hero.name}}
+
+    </li>
+  </ul>
+</div>
+<button (click) = "submit('ravi')">Submit</button>
+<input type = "text" [(ngModel)]="data.name"/>{{data.name}}
+<input type = "password" [(ngModel)]="data.password"/>
+<button (click)="submit()">Login</button>
+
+
