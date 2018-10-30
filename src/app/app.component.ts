@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from './service/user.service';
 
 @Component({
   selector: 'app-root',
@@ -12,9 +13,12 @@ export class AppComponent {
   public list: any[] = [1,2,3,4];
   public listObj: any[] = [{name: 'ravi', age: 28}, {name:'ramu', age: 45}];
   public department: string;
-constructor()
+constructor(private userService: UserService)
 {
   this.department = 'UI';
+  // this.res = console.log(this.userService.getData());
+    console.log(this.userService.name);
+ 
 }
 }
 
