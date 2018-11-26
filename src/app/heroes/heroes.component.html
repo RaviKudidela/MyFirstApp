@@ -11,5 +11,8 @@
 <input type = "text" [(ngModel)]="data.name"/>{{data.name}}
 <input type = "password" [(ngModel)]="data.password"/>
 <button (click)="submit()">Login</button>
+<div *ngIf="LoggedInUserDetails">
+  <ul>{{LoggedInUserDetails.usermail}}</ul>
+</div>
 
 

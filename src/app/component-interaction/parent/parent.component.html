@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    <li>
+      {{data.name}}--{{data.age}}.
+    </li>
+  </ul>
+</div>
+<app-child [list]="List" (addNewUser)= "newUser($event)"></app-child>

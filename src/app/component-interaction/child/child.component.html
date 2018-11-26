@@ -1,0 +1,17 @@
+<div>
+  <ul>
+    <li *ngFor="let user of list">
+       {{user.name}}--{{user.age}}
+    </li>
+  </ul>
+</div>
+<div class="form col-md-6 offset-md-3">
+  <form>
+    <div class="form-group">
+      <input type="text" class="form-control" name="username"placeholder="entername here" [(ngModel)]="data.name"/>
+      <input type="number" class="form-control" name="userpass"placeholder="enter age here" [(ngModel)]="data.age"/>
+      <button class="btn btn-primary" (click)="submit(data)">Login</button>
+    </div>
+  </form>
+
+</div>

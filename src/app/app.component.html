@@ -1,19 +1,10 @@
+
+
+<nav>
+<button routerLink="heroes">Heroes</button>
+<button routerLink="posts">Posts</button>
+<button routerLink="dashboard">Dashboard</button>
+<button routerLink="component-interaction">ComponentInteraction</button>
+</nav>
+<router-outlet></router-outlet>
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <h1 *ngIf = showname>my name is {{name}}</h1>
-  <ul>
-    <li *ngFor = "let num of list" >
-      {{num}}
-    </li>
-  </ul>
-  <ul>
-    <li *ngFor = "let item of listObj">
-      My name is {{item.name}} My age is {{item.age}} working in {{department}} department.
-    </li>
-  </ul>
-  </div>
-<app-heroes></app-heroes>
-<app-posts></app-posts>

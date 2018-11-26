@@ -1,0 +1,18 @@
+<div>
+  <form>
+    <fieldset>
+      <input type="text" name="usermail" minlength="3" value="" [(ngModel)]="userdetails.usermail" required #usermail="ngModel" /><br />
+      <div *ngIf="usermail.touched && usermail.invalid">
+        <div *ngIf="usermail.errors.required">email is required</div>
+        <div *ngIf="usermail.errors.minlength"> min length is 3 char</div>
+      </div>
+      <input type="password" #userpass="ngModel" name="userpass" [(ngModel)]="userdetails.userpass" pattern="ravi"/>
+      <div *ngIf="userpass.touched && userpass.invalid">
+        <div *ngIf="userpass.errors.pattern">Pattern Should be match</div>
+      </div>
+
+      <button class="btn btn-primary" (click)="submit()">login</button>
+    </fieldset>
+  </form>
+</div>
+

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../service/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-posts',
@@ -8,7 +9,7 @@ import { UserService } from '../service/user.service';
 })
 export class PostsComponent implements OnInit {
   public postlist: any[] =[];
-  constructor(private Username: UserService) { }
+  constructor(private Username: UserService, private router:Router) { }
 
   ngOnInit() {
   this.Username.getPosts().subscribe((res)=>{
@@ -17,5 +18,9 @@ export class PostsComponent implements OnInit {
     this.postlist = res;
 });
 
+
+  }
+  navigateToLifeCycle(){
+    this.router.navigate(['posts/Lifecycle']);
   }
 }
